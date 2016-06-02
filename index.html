@@ -2,9 +2,14 @@
 <html>
   <head>
     <title>90's Toys</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="container">
+      <h1>Place your 90's Toy Order now!</h1>
       <div id="blanks">
         <form>
           <div class="form-group">
@@ -14,7 +19,7 @@
 
           <div class="form-group">
             <label for="street">Enter street address</label>
-            <input id="steet" class="form-control" type="text">
+            <input id="street" class="form-control" type="text">
           </div>
 
           <div class="form-group">
@@ -26,8 +31,21 @@
             <label for="state">Enter state</label>
             <input id="state" class="form-control" type="text">
           </div>
+
+          <button type="submit" class="btn">Submit my order!!</button>
         </form>
       </div>
+
+      <div id="thank_you">
+        <h3>Thank you for ordering!</h3>
+          <p>Your order of 7 slinkys and 12 slap-it bracelets will be on it's way shortly to the following address:
+            <span class="street"></span>
+            <span class="city"></span>, <span class="state">
+          </p>
+
+
+      </div>
+
     </div>
   </body>
 </html>
